@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+    --primary-color:#9DBDFF;
+    --text-dark: #333333;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: "Poppins", sans-serif;
+  }
+  a {
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .logo span{
+    
+    color: var(--primary-color);
+  }
+  .logo a{
+    padding-left: 6rem;
+    color: var(--text-dark);
+  }
+  .navbar{
+    font-weight: 600;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+  }
+  .navOptions{
+    color: var(--text-dark);
+    padding-left: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;  
+  }
+  .navOptions a{
+    color: var(--text-dark);
+  }
+  .nav-btns{
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .nav-btns button{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+  }
+  .signup {
+    color: var(--text-dark);
+    background-color: transparent;
+  }
+  .signin {
+    color: white;
+    background-color: var(--primary-color);
+  }
+  .header__container {
+    max-width: 80%;
+    margin: auto;
+    padding-block: 6rem 2rem ;
+    padding-inline: 1rem;
+    display: grid;
+    gap: 2rem;
+   
+  }
+  .header_main{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5.5rem;
+    text-align: center;
+  }
+  .img img{
+      height: 600px;
+      width: 600px;
+  }
+  .header__content h1 span {
+    color: var(--primary-color);
+  }
+  .header__content button {
+    width: 95%;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .all-events{
+    color: var(--text-dark);
+    padding-top: 7rem;
+    display: grid;
+    gap: 1rem;
+    grid-template: 400px 400px/600px 600px;
+    height: 650px;
+   justify-content: center;
+   align-items: center;
+    width: 100%;
+}
+.event{
+    border-radius: 40px;
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    display: flex;
+    padding: 20px;
+    margin: 20px;}
+    .event:hover{
+        transform: scale(1.1);
+    }
+.pic img{
+    height: 240px;
+    width: 240px;
+    border-radius: 20px;
+} 
+.details{
+    color: var(--text-dark);
+    padding: 1rem;
+}     
+
+@media (width < 940px){
+    .all-events{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5rem;
+    }
+}
+@media (width < 805px){
+    .nav-btns{
+        display: none;
+    }
+}
+@media(width <525px){
+    .header_main{
+        flex-direction: column;
+    }
+    .all-events{
+        margin-left: 5rem;
+        gap: 0;
+    }
+   
+}
